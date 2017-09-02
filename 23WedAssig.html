@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script type="text/javascript">
+      function exportToForm(a) {
+            if(a=="circle")
+            {
+              document.getElementById('1').style.display = 'none';
+                document.getElementById('2').style.display = 'none';
+                  document.getElementById('3').style.display = 'none';
+                    document.getElementById('4').style.display = 'none';
+                      document.getElementById('5').style.display = 'none';
+
+    document.body.background = "circle.png";
+    document.getElementById('radius').style.display = 'inline-block';
+    document.getElementById('submit').style.display = 'inline-block';
+
+    document.getElementById('submit').onclick = function fun(){
+    var r = document.getElementById('radius').value;
+    var area = 3.14*r*r;
+    var peri = 2*3.14*r
+    document.write("area is " +area+"  perimeter is "+peri);
+  }
+            }
+            if(a=="triangle")
+            {
+              document.getElementById('1').style.display = 'none';
+                document.getElementById('2').style.display = 'none';
+                  document.getElementById('3').style.display = 'none';
+                    document.getElementById('4').style.display = 'none';
+                      document.getElementById('5').style.display = 'none';
+                          document.body.background = "triangle.png";
+
+                          document.getElementById('height').style.display = 'inline-block';
+                          document.getElementById('base').style.display = 'inline-block';
+                          document.getElementById('side').style.display = 'inline-block';
+                          document.getElementById('submit').style.display = 'inline-block';
+
+                          document.getElementById('submit').onclick = function trian(){
+                          var h = parseInt(document.getElementById('height').value);
+                          var w = parseInt(document.getElementById('base').value);
+                          var s = parseInt(document.getElementById('side').value);
+                          var triar = h*w*0.5;
+                          var peri = (h+w+s);
+                          document.write("area is = " + triar + " perimeter is = " + peri);
+                          }
+
+
+            }
+            if(a=="rectangle")
+            {
+              document.getElementById('1').style.display = 'none';
+                document.getElementById('2').style.display = 'none';
+                  document.getElementById('3').style.display = 'none';
+                    document.getElementById('4').style.display = 'none';
+                      document.getElementById('5').style.display = 'none';
+
+    document.body.background = "rectangle.png";
+
+    document.getElementById('length').style.display = 'inline-block';
+    document.getElementById('breadth').style.display = 'inline-block';
+    document.getElementById('submit').style.display = 'inline-block';
+
+    document.getElementById('submit').onclick = function trian(){
+    var h = document.getElementById('length').value;
+    var w = document.getElementById('breadth').value;
+    var recarea = h*w;
+    var peri = h*2+w*2;
+    document.write("area is = " + recarea + " perimeter = "+peri);
+    }
+            }
+            if(a=="square")
+            {
+              document.getElementById('1').style.display = 'none';
+                document.getElementById('2').style.display = 'none';
+                  document.getElementById('3').style.display = 'none';
+                    document.getElementById('4').style.display = 'none';
+                      document.getElementById('5').style.display = 'none';
+    document.body.background = "square.png";
+
+    document.getElementById('side').style.display = 'inline-block';
+    document.getElementById('submit').style.display = 'inline-block';
+
+    document.getElementById('submit').onclick = function trian(){
+    var h = document.getElementById('side').value;
+    var recarea = h*h;
+    var peri = 4*h;
+    document.write("area is = " + recarea + " perimeter = "+peri);
+    }
+            }
+            if(a=="hexagon")
+            {
+              document.getElementById('1').style.display = 'none';
+                document.getElementById('2').style.display = 'none';
+                  document.getElementById('3').style.display = 'none';
+                    document.getElementById('4').style.display = 'none';
+                      document.getElementById('5').style.display = 'none';
+                  document.body.background = "hexagon.png";
+
+                    document.getElementById('5').style.display= "inline";
+
+                    document.getElementById('side').style.display = 'inline-block';
+                    document.getElementById('submit').style.display = 'inline-block';
+
+                    document.getElementById('submit').onclick = function trian(){
+                    var h = document.getElementById('side').value;
+                    var recarea = (3*h*h*1.73)/2;
+                    var peri = 6*h;
+                    document.write("area is = " + recarea + " perimeter = "+peri);
+                    }
+            }
+          }
+      </script>
+
+
+  <img style="margin:20px"  id="1" src="circle.png" onclick="exportToForm('circle')" />
+  <img style="margin:20px" id="2" src="rectangle.png"  onclick="exportToForm('rectangle')"/>
+  <img style="margin:20px"  id="3" src="triangle.png"  onclick="exportToForm('triangle')"/>
+  <img style="margin:20px"  id="4" src="square.png"  onclick="exportToForm('square')"/>
+  <img style="margin-left:50%;" id="5" src="hexagon.png"  onclick="exportToForm('hexagon')"/>
+
+  <input type="text" id="height" autofocus value = "Enter height" hidden="hidden"/>
+  <input type="text" id="base" autofocus value = "Enter base" hidden="hidden"/>
+  <input type="text" id="radius" autofocus value = "Enter radius" hidden="hidden"/>
+  <input type="text" id="side" autofocus value = "Enter side" hidden="hidden"/>
+  <input type="text" id="length" autofocus value = "Enter length" hidden="hidden"/>
+  <input type="text" id="breadth" autofocus value = "Enter breadth" hidden="hidden"/>
+  <input type="button" id="submit" autofocus value = "Submit" hidden="hidden"/>
+
+
+
+</body>
+
+
+</html>
