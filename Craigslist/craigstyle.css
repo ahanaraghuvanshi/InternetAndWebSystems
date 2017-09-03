@@ -1,0 +1,242 @@
+header
+{
+	font-size:26;
+	width:100%;
+	height:50%;
+	background-image:url("images.png");
+	
+}
+.topnav
+{
+	background-color:black;
+	color:#FFFFFF;
+	text-align:center;
+	height:5%;
+	margin-bottom:25px;
+}
+.topnav a{
+	color:#F9E79F;
+}
+    #logo sup {
+    font-size: 20%;
+}
+    sup {
+    font-size: .7em;
+    line-height: normal;
+    vertical-align: super;
+    }
+   #logo {
+    font-size: 90px;
+    line-height: 90px;
+    color: #551A8B;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Times New Roman",Times,serif;
+    font-stretch: expanded;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+	margin-bottom:1%;
+}
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 7px 5px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+	height:15%;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 100%;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 25%;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 42%; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 25%;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 100%;
+	}
+	#content {
+		width: 70%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 70%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: 25%;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: 50%;
+		float: none;
+	}
+	
+	#middle {
+		width: 25%;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: 25%;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+
+
